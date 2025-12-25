@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://jurinex-backend-120280829617.asia-south1.run.app';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -264,7 +264,7 @@ export const askQuestion = async (documentId, question, chatId = null, intent = 
 //   onComplete,
 //   intent = null
 // ) => {
-//   const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+//   const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://jurinex-backend-120280829617.asia-south1.run.app';
 //   const token = getToken();
 
 //   const safeCall = (fn, ...args) => {
@@ -447,7 +447,7 @@ export const askQuestionStream = async (
   onComplete,
   intent = null
 ) => {
-  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://jurinex-backend-120280829617.asia-south1.run.app';
   const token = getToken();
 
   const safeCall = (fn, ...args) => {

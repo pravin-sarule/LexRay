@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'https://jurinex-backend-120280829617.asia-south1.run.app',
         changeOrigin: true,
       },
     },
