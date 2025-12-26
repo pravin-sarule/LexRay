@@ -72,7 +72,7 @@ const ChatPanel = ({
     setIsImproving(true);
     try {
       // Call API to improve the text using Gemini
-      const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+      const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://jurinex-backend-120280829617.asia-south1.run.app';
       const response = await fetch(`${API_BASE_URL}/api/ask/improve-text`, {
         method: 'POST',
         headers: {
